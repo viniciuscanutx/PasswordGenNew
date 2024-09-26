@@ -2,14 +2,24 @@ import random
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-
 class PassGen:
     def __init__(self, root):
         self.root = root
         self.root.title('Password Generator')
         self.root.geometry('350x200')
 
-        self.label_user = tk.Label(root, text="E-mail/Usuário:")
+        window_width = 350
+        window_height = 200
+
+        screen_width = root.winfo_screenwidth()
+        screen_height = root.winfo_screenheight()
+
+        position_top = int(screen_height / 2 - window_height / 2)
+        position_right = int(screen_width / 2 - window_width / 2)
+
+        self.root.geometry(f'{window_width}x{window_height}+{position_right}+{position_top}')
+
+        self.label_user = tk.Label(root, text="Usuário:")
         self.label_user.grid(row=1, column=0, padx=10, pady=5)
         self.entry_user = tk.Entry(root)
         self.entry_user.grid(row=1, column=1, padx=10, pady=5)
