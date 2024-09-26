@@ -46,3 +46,14 @@ def gerar_senha(self):
             self.salvar_senha(new_pass)
         except ValueError:
             messagebox.showerror("Erro", "Selecione a quantidade de caracteres")
+
+def salvar_senha(self, nova_senha):
+        site = self.entry_site.get()
+        usuario = self.entry_user.get()
+        if not site or not usuario:
+            messagebox.showerror("Erro", "Preencha todos os campos")
+            return
+
+        with open('senhas.txt', 'a', newline='\n') as arquivo:
+            arquivo.write(f"site: {site}usuario: {usuario}\nnova senha: {nova_senha}")
+        messagebox.showinfo("Sucesso", "Senha salva com sucesso!")
