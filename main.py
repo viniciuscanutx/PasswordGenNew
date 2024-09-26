@@ -32,3 +32,17 @@ class PassGen:
 
         self.output_text = tk.Text(root, height=5, width=32)
         self.output_text.grid(row=4, column=0, columnspan=2, padx=10, pady=5)
+
+def gerar_senha(self):
+        try:
+            total_chars = int(self.combo_chars.get())
+            char_list = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#$%*&/'
+            chars = random.choices(char_list, k=total_chars)
+            new_pass = ''.join(chars)
+
+            self.output_text.delete(1.0, tk.END)
+            self.output_text.insert(tk.END, f"Sua nova senha é:\n{new_pass}\n")
+
+            self.salvar_senha(new_pass)
+        except ValueError:
+            messagebox.showerror("Erro", "Selecione a quantidade de caracteres")
