@@ -4,8 +4,8 @@ from sqlite3 import Error
 import random 
 import string
 
-db_account = './db/users.db'
-db_passwords = './db/passwords.db'
+db_account = './db/databases/users.db'
+db_passwords = './db/databases/passwords.db'
 
 def acess_db(db_name):
     try:
@@ -14,3 +14,4 @@ def acess_db(db_name):
     except Error as e:
         print(e)
     return None
+
