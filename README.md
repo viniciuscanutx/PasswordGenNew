@@ -1,27 +1,26 @@
 
 # Password Generator 🔒
 
-Este é um **Gerador de Senhas Seguras** desenvolvido em Python utilizando `Tkinter` para a interface gráfica. O objetivo é criar senhas seguras para diferentes sites e serviços, além de salvá-las localmente para fácil acesso. 🛡️
+Este é um **Gerador de Senhas Seguras** desenvolvido em Python utilizando `Flet` para a interface gráfica. O objetivo é criar senhas seguras para diferentes sites e serviços, além de salvá-las em um banco de dados local para fácil acesso. 🛡️
 
 ## 🖥️ Visão Geral
 
 O projeto oferece uma interface simples onde você pode:
-- Inserir o nome do site ou software que deseja criar uma senha.
-- Inserir o e-mail ou nome de usuário associado ao serviço.
-- Definir o número de caracteres da senha.
-- Gerar uma senha aleatória e salvá-la automaticamente em um arquivo local (`senhas.txt`).
+- Criar uma conta e ter senhas separadas para cada conta criada.
+- Inserir o e-mail, nome de usuario ou site associado ao serviço.
+- Definir o tamanho da senha entre 6 e 24 caracteres.
 
 ## 🚀 Funcionalidades
 
 - **Geração de senhas seguras**: Senhas contendo letras maiúsculas, minúsculas, números e caracteres especiais.
-- **Interface amigável**: Feito com `Tkinter` para ser simples e fácil de usar.
-- **Armazenamento seguro**: As senhas geradas são automaticamente salvas em um arquivo de texto.
+- **Interface amigável**: Feito com `Flet` para ser simples e fácil de usar.
+- **Armazenamento seguro**: As senhas geradas são automaticamente salvas em um banco de dados local.
 - **Quantidade personalizável de caracteres**: Escolha o comprimento desejado da sua senha.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python**: Linguagem principal do projeto.
-- **Tkinter**: Biblioteca de interface gráfica.
+- **Flet**: Biblioteca de interface gráfica.
 - **Random**: Módulo da biblioteca padrão para geração de senhas aleatórias.
 
 ## 📦 Instalação
@@ -45,27 +44,25 @@ O projeto oferece uma interface simples onde você pode:
 
 ## 📝 Como Usar
 
-1. Site/Software: Insira o nome do site ou software para o qual você está criando uma senha.
+1. E-mail/Senha: Insira um usuario ou email e senha e crie sua conta.
 
-2. E-mail/Usuário: Insira o e-mail ou nome de usuário.
+2. Clique em gerenciar senhas e escolha uma quantidade de caracteres e digite para onde irá essa senha.
 
-3. Quantidade de Caracteres: Escolha a quantidade de caracteres desejada (padrão é 12).
+3. Clique no botão Gerar Senha para gerar uma senha segura.
 
-4. Clique no botão Gerar Senha para gerar uma senha segura.
-
-5. A senha gerada será exibida na tela e salva no arquivo senhas.txt.
+4. A senha gerada será exibida na tela e salva no banco.
 
 ## 🎨 Customização
 
-O tema padrão utilizado para a interface é Clearlooks. Caso ele não esteja disponível, o aplicativo usará o tema padrão do Tkinter
+O tema utilizado para a interface é padrão. Caso ele não esteja disponível, o aplicativo usará o tema padrão do Flet.
 
 ## ✨ Melhorias Futuras
 
 - Adicionar suporte para criptografia das senhas salvas.
 
-- Interface mais responsiva e moderna.
+- Banco de dados online para melhor suporte a usuários.
 
-- Implementação de gerenciador de senhas com busca e edição.
+- Busca de senhas.
 
 ## 🤝 Contribuições
 
