@@ -12,7 +12,6 @@ def acess_db(db_name):
         print(e)
     return None
 
-
 def auth_user(email, password):
     conn = acess_db(db_account)
     cursor = conn.cursor()
