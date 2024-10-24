@@ -64,6 +64,24 @@ O tema utilizado para a interface é padrão. Caso ele não esteja disponível, 
 
 - Busca de senhas.
 
+## Screenshots
+
+<p align="center">
+    <strong>Login Screen</strong>
+</p>
+<img src='https://raw.githubusercontent.com/viniciuscanutx/PiratesWeb/refs/heads/main/public/Screenshots/1.jpg' width=800px />
+
+<p align="center">
+    <strong>Passwords List</strong>
+</p>
+<img src='https://raw.githubusercontent.com/viniciuscanutx/PiratesWeb/refs/heads/main/public/Screenshots/2.jpg' width=800px />
+
+<p align="center">
+    <strong>Password Manager</strong>
+</p>
+<img src='https://raw.githubusercontent.com/viniciuscanutx/PiratesWeb/refs/heads/main/public/Screenshots/3.jpg' width=800px />
+
+
 ## 🤝 Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
